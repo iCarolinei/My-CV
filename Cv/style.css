@@ -1,0 +1,53 @@
+body {
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 20px;
+width: 800px;
+margin: 0 auto;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: (4, 25%);
+    grid-template-rows: (4,25%);
+} 
+ 
+header {
+  text-align: center;
+grid-column: 2/4;
+grid-row: 1/2;
+ }
+
+i {
+    background-color: #ADD8E6;
+    color: white;
+    text-align: center;
+    
+}
+
+img {
+   height: 100px;
+   width: 100px;
+   border-radius: 20%;
+   border: 1px solid grey;
+  
+}
+
+h1 {
+    background-color: #ADD8E6;
+    color: white;
+}
+
+hr {
+      border-top: 1px solid grey;
+
+      }
+
+      section {
+          
+        grid-column: 2/4;
+        grid-row: 2/3;
+      }
+
+
+      

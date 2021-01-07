@@ -1,53 +1,213 @@
-body {
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 20px;
-width: 800px;
-margin: 0 auto;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html,
+body,
 main {
-    display: grid;
-    grid-template-columns: (4, 25%);
-    grid-template-rows: (4,25%);
-} 
- 
-header {
-  text-align: center;
-grid-column: 2/4;
-grid-row: 1/2;
- }
-
-i {
-    background-color: #ADD8E6;
-    color: white;
-    text-align: center;
-    
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 0% 15% 0% 15%;
+  font-size: 15px;
 }
 
-img {
-   height: 100px;
-   width: 100px;
-   border-radius: 20%;
-   border: 1px solid grey;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(4);
+}
+
+.border {
+  border-radius: 1%;
+  box-shadow: 3px 3px 3px 3px grey;
+}
+
+.aside {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  color: white;
+
+  background: linear-gradient(black, #708090);
+  border-radius: 1%;
+   display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(2);
+}
+.aside-content {
+  grid-column: 1;
+  grid-row: 1/2;
+    padding: 20% 10% 0 10%;
+    
+  line-height: 2em;
+
+
+}
+
+.title-aside {
+  margin-bottom: 5%;
+  font-size: 20px;
+    color: #fed300;
+
   
 }
 
-h1 {
-    background-color: #ADD8E6;
-    color: white;
+.aside-footer {
+  
+  
+
+  margin: 2%;
+  padding: 2%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-end;
+  grid-column: 1;
+  grid-row: 2/3;
 }
 
-hr {
-      border-top: 1px solid grey;
+.header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background: #f7f7ff;
+  padding: 5%;
 
-      }
+  border-bottom: 1px solid black;
+  margin: 2%;
+}
 
-      section {
-          
-        grid-column: 2/4;
-        grid-row: 2/3;
-      }
+.header-content {
+  text-align: justify;
+}
+
+.title1 {
+  font-size: 45px;
+  color: #fed300;
+}
+
+.title2 {
+  text-align: center;
+}
+
+.main-experience {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 5%;
+}
+
+.main-langage {
+  padding-top: 5%;
+}
+
+.main-skill {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding: 0 5% 0 5%;
+}
+
+.main-passion {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  padding: 5%;
+}
+
+img {
+  width: 23%;
+  float: right;
+  margin-left: 5%;
+}
+
+.progress {
+  background: black;
+
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 1px;
+  display: flex;
+  height: 10px;
+  width: 200px;
+}
+
+.progress-value1 {
+  animation: load1 3s normal forwards;
+  box-shadow: 0 10px 10px -10px #fff;
+  border-radius: 100px;
+  background: #fed300;
+  height: 8px;
+  width: 0;
+}
+
+@keyframes load1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.progress-value2 {
+  animation: load2 3s normal forwards;
+  box-shadow: 0 10px 10px -10px #fff;
+  border-radius: 100px;
+  background: #fed300;
+  height: 8px;
+  width: 0;
+}
+
+@keyframes load2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.progress-value3 {
+  animation: load3 3s normal forwards;
+  box-shadow: 0 10px 10px -10px #fff;
+  border-radius: 100px;
+  background: #fed300;
+  height: 8px;
+  width: 0;
+}
+
+@keyframes load3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+li,
+ul,
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a {
+  padding: 2%;
+}
 
 
-      # My-CV
+i {
+  color: #fed300;
+
+}
+
+i:hover {
+  color:white;
+}
+
+h3 {
+  padding-bottom: 3%;
+  font-style: italic;
+}
+
+
+      

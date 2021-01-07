@@ -31,38 +31,37 @@ main {
 
   background: linear-gradient(black, #708090);
   border-radius: 1%;
-   display: grid;
+  display: grid;
   grid-template-columns: 1;
-  grid-template-rows: repeat(2);
+  grid-template-rows: 1fr 2px 50px;
 }
 .aside-content {
   grid-column: 1;
   grid-row: 1/2;
-    padding: 20% 10% 0 10%;
-    
+  padding: 20% 10% 0 10%;
+
   line-height: 2em;
-
-
 }
 
 .title-aside {
   margin-bottom: 5%;
   font-size: 20px;
-    color: #fed300;
-
-  
+  color: #fed300;
 }
 
 .aside-footer {
-  
-  
-
   margin: 2%;
   padding: 2%;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items:flex-end;
+  align-items: flex-end;
+  grid-column: 1;
+  grid-row: 3/4;
+}
+
+.aside-bar {
+  background-color: white;
   grid-column: 1;
   grid-row: 2/3;
 }
@@ -194,20 +193,15 @@ a {
   padding: 2%;
 }
 
-
 i {
   color: #fed300;
-
 }
 
 i:hover {
-  color:white;
+  color: white;
 }
 
 h3 {
   padding-bottom: 3%;
   font-style: italic;
 }
-
-
-      

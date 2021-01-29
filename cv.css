@@ -5,12 +5,49 @@
 }
 
 html,
-body,
-main {
- 
+body {
   font-family: "Montserrat", sans-serif;
   padding: 1% 15% 1% 15%;
   font-size: 15px;
+}
+
+/*computer*/
+@media all and (min-width: 1300px) {
+  .grid {
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(4);
+  }
+  .header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .aside {
+    grid-column: 1/2;
+    grid-row: 1/5;
+  }
+}
+
+/*tablet & phone*/
+@media all and (max-width: 1299px) {
+  .grid {
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3);
+  }
+  .header {
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+  .main {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+  .aside {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+  .progress {
+    width: 50%;
+  }
 }
 
 a {
@@ -38,20 +75,17 @@ a {
   margin: 1%;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2);
-  grid-template-rows: repeat(4);
-}
-
 .border {
   border-radius: 1%;
   box-shadow: 3px 3px 3px 3px grey;
 }
-
+.grid {
+  display: grid;
+}
+.main {
+  display: grid;
+}
 .aside {
-  grid-column: 1/2;
-  grid-row: 1/5;
   color: white;
 
   background: linear-gradient(black, #708090);
@@ -79,7 +113,7 @@ a {
 }
 
 .aside-quote {
-  padding-top: 35%;
+  padding-top: 30%;
   font-style: oblique;
   font-weight: 900;
 }
@@ -101,8 +135,6 @@ a {
 }
 
 .header {
-  grid-column: 2/3;
-  grid-row: 1/2;
   background: #f7f7ff;
   padding: 5%;
 
@@ -124,13 +156,13 @@ a {
 }
 
 .main-experience {
-  grid-column: 2/3;
+  grid-column: 1;
   grid-row: 2/3;
   padding: 5% 6% 6% 6%;
 }
 
 .main-skill {
-  grid-column: 2/3;
+  grid-column: 1;
   grid-row: 3/4;
   padding: 0 6% 0 6%;
   display: grid;
@@ -155,7 +187,7 @@ a {
 }
 
 .main-group {
-  grid-column: 2/3;
+  grid-column: 1;
   grid-row: 4/5;
   padding: 6% 6% 3% 6%;
   display: grid;

@@ -7,12 +7,20 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  padding: 1% 15% 1% 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   font-size: 15px;
 }
 
 /*computer*/
 @media all and (min-width: 1300px) {
+  .border {
+    box-shadow: 3px 3px 3px 3px grey;
+  }
+  body {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   .grid {
     grid-template-columns: repeat(2);
     grid-template-rows: repeat(4);
@@ -25,13 +33,24 @@ body {
     grid-column: 1/2;
     grid-row: 1/5;
   }
+  .progress {
+    width: 200px;
+  }
 }
 
-/*tablet & phone*/
+/*tablet*/
 @media all and (max-width: 1299px) {
+  .border {
+    box-shadow: 3px 3px 3px 3px grey;
+  }
+  body {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
   .grid {
     grid-template-columns: 1;
     grid-template-rows: repeat(3);
+    width: auto;
   }
   .header {
     grid-column: 1;
@@ -46,7 +65,18 @@ body {
     grid-row: 3/4;
   }
   .progress {
-    width: 50%;
+    width: 90%;
+  }
+}
+
+/*phone*/
+@media all and (max-width: 599px) {
+  body {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .border {
+    box-shadow: none;
   }
 }
 
@@ -77,7 +107,7 @@ a {
 
 .border {
   border-radius: 1%;
-  box-shadow: 3px 3px 3px 3px grey;
+  width: auto;
 }
 .grid {
   display: grid;
@@ -161,12 +191,16 @@ a {
   padding: 5% 6% 6% 6%;
 }
 
+.li-padding {
+  padding-left: 3%;
+}
+
 .main-skill {
   grid-column: 1;
   grid-row: 3/4;
   padding: 0 6% 0 6%;
   display: grid;
-  grid-template-columns: repeat(2);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2);
 }
 
@@ -191,7 +225,7 @@ a {
   grid-row: 4/5;
   padding: 6% 6% 3% 6%;
   display: grid;
-  grid-template-columns: repeat(2);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2);
 }
 
@@ -231,7 +265,6 @@ img {
   padding: 0 1px;
   display: flex;
   height: 10px;
-  width: 200px;
 }
 
 .progress-value1 {
@@ -373,4 +406,3 @@ img {
     width: 0%;
   }
 }
-

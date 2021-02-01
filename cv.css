@@ -165,16 +165,20 @@ a {
 }
 
 .header {
-  background: #f7f7ff;
+ 
   padding: 5%;
 
-  border-bottom: 1px solid black;
-  margin: 2%;
+  border-bottom: 2px solid #fed300;
+
+ margin: 1%;
 }
 
 .header-content {
   text-align: justify;
+  font-size: 14px;
+ color:grey;
 }
+
 
 .title1 {
   font-size: 45px;
@@ -182,7 +186,11 @@ a {
 }
 
 .title2 {
-  text-align: center;
+  
+  padding-bottom: 4%;
+  padding-top: 2%;
+  padding-left: 2%;
+  font-style: italic;
 }
 
 .main-experience {
@@ -250,9 +258,10 @@ a {
 }
 
 img {
-  width: 23%;
+  width: 20%;
   float: right;
-  margin-left: 5%;
+padding-left: 4%;  
+  padding-top: 1%;
 }
 
 .progress {
@@ -405,4 +414,10 @@ img {
   100% {
     width: 0%;
   }
+}
+.letter {
+  
+  color: #fed300;
+  font-weight: 900;
+  font-size: 20px;
 }

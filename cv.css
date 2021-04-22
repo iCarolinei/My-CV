@@ -346,7 +346,7 @@ padding-left: 4%;
   }
 }
 
-.progress-value5 {
+.progress-value1 {
   animation: load5 3s normal forwards;
   box-shadow: 0 10px 10px -10px #fff;
   border-radius: 100px;
@@ -360,7 +360,7 @@ padding-left: 4%;
     width: 0;
   }
   100% {
-    width: 75%;
+    width: 80%;
   }
 }
 
